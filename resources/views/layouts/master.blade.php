@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="fa">
 @include('layouts.partials._headTag')
-<body class="container">
-    <div id="app" class="d-flex flex-column flex-root">
+<body class="container pt-5">
+    <div id="app">
+
         @yield('content')
     </div>
     @include('layouts.partials._footerBeforeBody')
