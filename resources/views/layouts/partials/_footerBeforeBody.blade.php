@@ -1,0 +1,11 @@
+<script>
+    window.Laravel = {!! json_encode([
+        "csrfToken" => csrf_token(),
+        "baseUrl" => url("/"),
+        "routes" => collect(Route::getRoutes())->mapWithKeys(function ($route){
+            return [$route->getName() => $route->uri()];
+        })
+    ]) !!};
+</script>
+<script src="{{ asset("assets/js/app.js") }}"></script>
+@yield('extraFooterCode')
