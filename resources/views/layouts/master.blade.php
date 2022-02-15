@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fa">
 @include('layouts.partials._headTag')
-<body class="container pt-5">
+<body class="container pt-5 bg-white">
     <div id="app">
 
         @yield('content')
